@@ -1,0 +1,117 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "C3753C6F",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6760648704",
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_developerTeamID" : "7XG7U24KK9",
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 795353512.85852003,
+    "_locale" : "en_GB",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "GBR",
+    "_storeKitErrors" : [
+
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21980964",
+      "localizations" : [
+
+      ],
+      "name" : "PaceLife Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "59.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "6760649097",
+          "introductoryOffer" : {
+            "internalID" : "EEEDFEE3",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "Best value — save 44% with yearly AI coaching",
+              "displayName" : "PaceLife Pro Annual",
+              "locale" : "en_GB"
+            }
+          ],
+          "productID" : "com.inedgroup.pacelife.annual",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "PaceLife Pro Annual",
+          "subscriptionGroupID" : "21980964",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "8.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6760648999",
+          "introductoryOffer" : {
+            "internalID" : "588C85F4",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "AI energy coaching, routes & daily insights",
+              "displayName" : "PaceLife Pro",
+              "locale" : "en_GB"
+            }
+          ],
+          "productID" : "com.inedgroup.pacelife.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "PaceLife Pro Monthly",
+          "subscriptionGroupID" : "21980964",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

@@ -1,0 +1,84 @@
+name: PaceLife
+options:
+  bundleIdPrefix: com.inedgroup
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+
+packages:
+  Supabase:
+    url: https://github.com/supabase-community/supabase-swift
+    from: 2.0.0
+
+settings:
+  base:
+    SWIFT_VERSION: 5.10
+    MARKETING_VERSION: 1.0.0
+    CURRENT_PROJECT_VERSION: 1
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    DEVELOPMENT_TEAM: "7XG7U24KK9"
+    CODE_SIGN_STYLE: Automatic
+    CODE_SIGN_IDENTITY: "Apple Development"
+
+schemes:
+  PaceLife:
+    build:
+      targets:
+        PaceLife: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+    archive:
+      config: Release
+
+targets:
+  PaceLife:
+    type: application
+    platform: iOS
+    bundleId: com.inedgroup.pacelife
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.inedgroup.pacelife
+        INFOPLIST_FILE: PaceLife/Info.plist
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_IDENTITY: "Apple Development"
+        DEVELOPMENT_TEAM: "7XG7U24KK9"
+        CODE_SIGN_ENTITLEMENTS: PaceLife/PaceLife.entitlements
+    sources:
+      - path: PaceLife
+    info:
+      path: PaceLife/Info.plist
+      properties:
+        UILaunchScreen:
+          UIColorName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIBackgroundModes:
+          - location
+          - fetch
+          - remote-notification
+        NSLocationWhenInUseUsageDescription: "PaceLife uses your location to build personalised routes around you"
+        NSLocationAlwaysAndWhenInUseUsageDescription: "PaceLife uses your location to track your active routes"
+        NSHealthShareUsageDescription: "PaceLife reads your steps and sleep data to calculate your daily energy score"
+        NSHealthUpdateUsageDescription: "PaceLife saves your activity data to improve your recommendations"
+        CFBundleURLTypes:
+          - CFBundleURLSchemes:
+              - com.inedgroup.pacelife
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+    entitlements:
+      path: PaceLife/PaceLife.entitlements
+      properties:
+        com.apple.developer.healthkit: true
+        com.apple.developer.healthkit.access:
+          - health-records
+        com.apple.developer.applesignin:
+          - Default
+        aps-environment: development
+        com.apple.developer.weatherkit: true
+    dependencies:
+      - package: Supabase
+        product: Supabase
+      - sdk: WeatherKit.framework
