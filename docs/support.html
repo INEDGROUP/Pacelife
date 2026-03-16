@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — PaceLife</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0A0A0F; color: #F2F2F7; }
+    a { color: #4CFFA0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .logo { font-size: 20px; font-weight: 700; letter-spacing: -0.5px; }
+    .logo span { color: #4CFFA0; }
+    nav a { margin-left: 28px; font-size: 14px; color: #8E8E93; }
+
+    .content { max-width: 720px; margin: 60px auto; padding: 0 24px 80px; }
+    h1 { font-size: 36px; font-weight: 800; margin-bottom: 8px; }
+    .tagline { color: #8E8E93; font-size: 16px; margin-bottom: 48px; }
+
+    .contact-card {
+      background: rgba(76,255,160,0.07); border: 1px solid rgba(76,255,160,0.2);
+      border-radius: 16px; padding: 28px 32px; margin-bottom: 52px;
+      display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+    }
+    .contact-card .emoji { font-size: 36px; }
+    .contact-card h2 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+    .contact-card p { color: #8E8E93; font-size: 14px; margin-bottom: 12px; }
+    .contact-card a.btn {
+      background: #4CFFA0; color: #0A0A0F; padding: 10px 22px;
+      border-radius: 50px; font-size: 14px; font-weight: 700;
+      display: inline-block;
+    }
+
+    h2.section { font-size: 22px; font-weight: 700; margin-bottom: 20px; }
+
+    .faq { margin-bottom: 52px; }
+    .faq-item {
+      border: 1px solid rgba(255,255,255,0.08); border-radius: 12px;
+      margin-bottom: 10px; overflow: hidden;
+    }
+    details summary {
+      padding: 18px 20px; font-size: 15px; font-weight: 600;
+      cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::after { content: "+"; color: #4CFFA0; font-size: 20px; font-weight: 300; }
+    details[open] summary::after { content: "−"; }
+    details[open] { background: rgba(255,255,255,0.03); }
+    .faq-body { padding: 0 20px 18px; font-size: 14px; color: #8E8E93; line-height: 1.7; }
+
+    .tips { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 52px; }
+    .tip {
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px; padding: 20px;
+    }
+    .tip .icon { font-size: 24px; margin-bottom: 10px; }
+    .tip h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+    .tip p { font-size: 13px; color: #8E8E93; line-height: 1.6; }
+
+    footer {
+      text-align: center; padding: 40px 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: #636366; font-size: 13px;
+    }
+    footer a { color: #636366; margin: 0 12px; }
+    footer a:hover { color: #4CFFA0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">Pace<span>Life</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+
+<div class="content">
+  <h1>Help &amp; Support</h1>
+  <p class="tagline">We're here to help. Check the FAQs below or get in touch.</p>
+
+  <div class="contact-card">
+    <div class="emoji">✉️</div>
+    <div>
+      <h2>Contact us</h2>
+      <p>Can't find your answer below? We typically reply within 24 hours.</p>
+      <a class="btn" href="mailto:support@inedgroup.com">support@inedgroup.com</a>
+    </div>
+  </div>
+
+  <h2 class="section">Frequently Asked Questions</h2>
+  <div class="faq">
+
+    <div class="faq-item">
+      <details>
+        <summary>How do I log a check-in?</summary>
+        <div class="faq-body">Tap the <strong>+</strong> button on the Home screen or the "Log today's check-in" banner. You'll be asked to rate your energy (1–100), hours of sleep, and overall mood. Check-ins take less than 30 seconds.</div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Why isn't my step count showing?</summary>
+        <div class="faq-body">PaceLife reads steps from Apple Health. Go to <strong>Settings → Privacy &amp; Security → Health → PaceLife</strong> and make sure Steps is enabled. If you've recently installed the app you may need to reopen it after granting permission.</div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>How does the AI insight work?</summary>
+        <div class="faq-body">After you log a check-in, PaceLife sends your energy score, sleep, steps, and local weather to our AI model (Claude by Anthropic). It generates a personalised coaching insight for your day. Results are cached so you won't be charged extra API calls on refresh.</div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>How do I restore a previous purchase?</summary>
+        <div class="faq-body">Open the app and go to <strong>Profile → Subscription</strong>, then tap <strong>Restore purchases</strong>. Make sure you're signed in with the same Apple ID you used to purchase. If the issue persists, contact us with your order number.</div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>How do I cancel my subscription?</summary>
+        <div class="faq-body">PaceLife subscriptions are managed by Apple. To cancel, open the <strong>Settings</strong> app on your iPhone → tap your name → <strong>Subscriptions</strong> → PaceLife → <strong>Cancel Subscription</strong>. You'll retain access until the end of the billing period.</div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>What is the free trial?</summary>
+        <div class="faq-body">New subscribers get a 7-day free trial on both the Monthly and Annual plans. You won't be charged until the trial ends, and you can cancel at any time before then at no cost.</div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>How do I delete my account and data?</summary>
+        <div class="faq-body">To delete your account and all associated data, please email us at <a href="mailto:support@inedgroup.com">support@inedgroup.com</a> with the subject line "Delete my account" from the email address linked to your account. We'll process the request within 7 days.</div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Why is the map not showing my location?</summary>
+        <div class="faq-body">PaceLife needs location permission to centre the map and suggest nearby routes. Go to <strong>Settings → Privacy &amp; Security → Location Services → PaceLife</strong> and select "While Using the App" or "Always".</div>
+      </details>
+    </div>
+
+  </div>
+
+  <h2 class="section">Tips for getting the most out of PaceLife</h2>
+  <div class="tips">
+    <div class="tip">
+      <div class="icon">📅</div>
+      <h3>Check in daily</h3>
+      <p>Even a quick 30-second check-in every morning builds the data needed for meaningful insights.</p>
+    </div>
+    <div class="tip">
+      <div class="icon">🌙</div>
+      <h3>Log your sleep</h3>
+      <p>Sleep is the biggest driver of energy. Logging it unlocks sleep–energy correlations in your Insights tab.</p>
+    </div>
+    <div class="tip">
+      <div class="icon">🔔</div>
+      <h3>Enable notifications</h3>
+      <p>Morning and evening reminders help you stay consistent without having to think about it.</p>
+    </div>
+    <div class="tip">
+      <div class="icon">🗺️</div>
+      <h3>Try a suggested route</h3>
+      <p>Routes are tailored to your current energy level and local weather — tap one to open it in Maps.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p style="margin-bottom:12px;">© 2025 PaceLife. All rights reserved.</p>
+  <a href="index.html">Home</a>
+  <a href="privacy.html">Privacy Policy</a>
+</footer>
+
+</body>
+</html>
